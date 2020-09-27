@@ -39,7 +39,9 @@
 	border-radius    : 0.5vw 0 0 0.5vw;
 	background-color : lightgray;
 	padding          : 0.5vw;
-	}
+	color: #91853B;
+	font-width : bold;
+;	}
 
 #main #top #title input {
 	display          : inline-flex;
@@ -56,9 +58,9 @@
 	}
 
 #main #top #title input:hover {
-	color            : green;
-	background-color : #e0f8e0;
-	box-shadow       : 0.3vw 0.3vw 0.4vw green;
+	color            : #ffffff;
+	background-color : #B8B069;
+	box-shadow       : 0.3vw 0.3vw 0.4vw #91853B;
 	}
 
 #main #top #rating {
@@ -74,22 +76,10 @@
 	}
 
 #main #top #rating .star {
-	display                 : inline-block;
-	/*font-size               : 2.8vw;*/
-	/*padding                 : 0;*/
-	/*border                  : 0 solid red;*/
-	/*border    : 1px solid blue;*/
-	/* standard gradient background */
-	width: 2.8vw;
-	height: 2.8vw;
-	/*background-*/
-	/*box-shadow: 0 0 0.5vw #ffd700;*/
-	/*background-*/
-	/*background: linear-gradient(red, blue);*/
-	opacity: 0.2;
-	/*!* clip hackery *!*/
-	/*-webkit-background-clip: text;*/
-	/*-webkit-text-fill-color: transparent;*/
+	display : inline-block;
+	width   : 2.8vw;
+	height  : 2.8vw;
+	opacity : 0.4;
 	}
 
 #main #top #actions {
@@ -112,42 +102,20 @@
 	}
 
 #main #top #actions #add_bt:hover {
-	color            : green;
-	background-color : #e0f8e0;
-	box-shadow       : 0.3vw 0.3vw 0.4vw green;
+	color            : #ffffff;
+	background-color : #B8B069;
+	box-shadow       : 0.3vw 0.3vw 0.4vw #91853b;
 	}
 
-/* My Personal CSS Utilities */
+/* General Use */
+
+.bright {
+	opacity : 1.0 !important;
+	}
 
 .left0 {
 	position : absolute;
 	left     : 0;
-	}
-
-.left10 {
-	position : absolute;
-	left     : 14%
-	}
-
-.left20 {
-	position  : absolute;
-	left      : 20%;
-	transform : translateX(-50%);
-	}
-
-.left40 {
-	position : absolute;
-	left     : 44%;
-	}
-
-.left60 {
-	position : absolute;
-	left     : 64%;
-	}
-
-.left80 {
-	position : absolute;
-	left     : 84%;
 	}
 
 .right0 {
@@ -155,13 +123,8 @@
 	right    : 0;
 	}
 
-.cright20 {
-	position  : absolute;
-	right     : 20%;
-	transform : translateX(50%);
-	}
-
 /* CENTER */
+
 .hcenter {
 	position  : absolute;
 	left      : 50%;
@@ -190,13 +153,6 @@
 	transform : translate(-25%, -50%);
 	}
 
-.h0-vcenter {
-	position  : absolute;
-	top       : 50%;
-	left      : 0;
-	transform : translate(0, -50%);
-	}
-
 .h75-vcenter {
 	position  : absolute;
 	top       : 50%;
@@ -204,35 +160,3 @@
 	transform : translate(-75%, -50%);
 	}
 
-/**/
-
-.hright {
-	position : absolute;
-	right    : 0;
-	}
-
-.hleft {
-	position : absolute;
-	left     : 0;
-	}
-
-.vtop {
-	position : absolute;
-	top      : 0;
-	}
-
-.vbottom {
-	position : absolute;
-	bottom   : 0;
-	}
-
-
-/*.saturate { filter: saturate(3); }*/
-/*.grayscale { filter: grayscale(100%); }*/
-/*.contrast { filter: contrast(160%); }*/
-/*.brightness { filter: brightness(0.25); }*/
-/*.blur { filter: blur(3px); }*/
-/*.invert { filter: invert(100%); }*/
-/*.sepia { filter: sepia(100%); }*/
-/*.huerotate { filter: hue-rotate(180deg); }*/
-/*.rss.opacity { filter: opacity(50%); }*/
