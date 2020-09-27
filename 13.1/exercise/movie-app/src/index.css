@@ -36,9 +36,9 @@
 	}
 
 #main #top #title .label {
-	border-radius: 0.5vw 0 0 0.5vw;
-	background-color: lightgray;
-	padding: 0.5vw;
+	border-radius    : 0.5vw 0 0 0.5vw;
+	background-color : lightgray;
+	padding          : 0.5vw;
 	}
 
 #main #top #title input {
@@ -62,10 +62,11 @@
 	}
 
 #main #top #rating {
-	display      : flex;
+	/*display      : flex;*/
 	position     : relative;
 	width        : 100%;
-	/*border       : 1px black solid;*/
+	padding      : 0;
+	border       : 1px black solid;
 	margin-left  : 2%;
 	margin-right : 2%;
 	font-size    : inherit;
@@ -73,7 +74,22 @@
 	}
 
 #main #top #rating .star {
-	font-size : 2.8vw;
+	display                 : inline-block;
+	/*font-size               : 2.8vw;*/
+	/*padding                 : 0;*/
+	/*border                  : 0 solid red;*/
+	/*border    : 1px solid blue;*/
+	/* standard gradient background */
+	width: 2.8vw;
+	height: 2.8vw;
+	/*background-*/
+	/*box-shadow: 0 0 0.5vw #ffd700;*/
+	/*background-*/
+	/*background: linear-gradient(red, blue);*/
+	opacity: 0.2;
+	/*!* clip hackery *!*/
+	/*-webkit-background-clip: text;*/
+	/*-webkit-text-fill-color: transparent;*/
 	}
 
 #main #top #actions {
@@ -104,34 +120,91 @@
 /* My Personal CSS Utilities */
 
 .left0 {
-	left : 4%;
+	position : absolute;
+	left     : 0;
 	}
 
 .left10 {
-	left : 14%
+	position : absolute;
+	left     : 14%
 	}
 
 .left20 {
-	left : 24%;
+	position  : absolute;
+	left      : 20%;
+	transform : translateX(-50%);
 	}
 
 .left40 {
-	left : 44%;
+	position : absolute;
+	left     : 44%;
 	}
 
 .left60 {
-	left : 64%;
+	position : absolute;
+	left     : 64%;
 	}
 
 .left80 {
-	left : 84%;
+	position : absolute;
+	left     : 84%;
 	}
 
+.right0 {
+	position : absolute;
+	right    : 0;
+	}
+
+.cright20 {
+	position  : absolute;
+	right     : 20%;
+	transform : translateX(50%);
+	}
+
+/* CENTER */
 .hcenter {
 	position  : absolute;
 	left      : 50%;
-	transform : translateX(-50%);
+	transform : translateX(-1000%);
 	}
+
+.vcenter {
+	position  : absolute;
+	top       : 50%;
+	transform : translateY(-50%);
+	}
+
+.hvcenter {
+	position  : absolute;
+	top       : 50%;
+	left      : 50%;
+	transform : translate(-50%, -50%);
+	}
+
+/**/
+
+.h25-vcenter {
+	position  : absolute;
+	top       : 50%;
+	left      : 25%;
+	transform : translate(-25%, -50%);
+	}
+
+.h0-vcenter {
+	position  : absolute;
+	top       : 50%;
+	left      : 0;
+	transform : translate(0, -50%);
+	}
+
+.h75-vcenter {
+	position  : absolute;
+	top       : 50%;
+	left      : 75%;
+	transform : translate(-75%, -50%);
+	}
+
+/**/
 
 .hright {
 	position : absolute;
@@ -153,8 +226,13 @@
 	bottom   : 0;
 	}
 
-.vcenter {
-	position  : absolute;
-	top       : 50%;
-	transform : translateY(-50%);
-	}
+
+/*.saturate { filter: saturate(3); }*/
+/*.grayscale { filter: grayscale(100%); }*/
+/*.contrast { filter: contrast(160%); }*/
+/*.brightness { filter: brightness(0.25); }*/
+/*.blur { filter: blur(3px); }*/
+/*.invert { filter: invert(100%); }*/
+/*.sepia { filter: sepia(100%); }*/
+/*.huerotate { filter: hue-rotate(180deg); }*/
+/*.rss.opacity { filter: opacity(50%); }*/

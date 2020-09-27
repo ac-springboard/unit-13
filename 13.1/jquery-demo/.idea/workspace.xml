@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11e81dc-9441-43f9-af65-debbb3bd07c5" name="Default Changelist" comment="" />
+    <list default="true" id="e11e81dc-9441-43f9-af65-debbb3bd07c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../exercise/movie-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise/movie-app/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -15,6 +20,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1i2lbM2O7Tq3NzaFwFHTZyxpiyE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601113638058</updated>
       <workItem from="1601113639144" duration="1255000" />
+      <workItem from="1601183491773" duration="17000" />
     </task>
     <servers />
   </component>

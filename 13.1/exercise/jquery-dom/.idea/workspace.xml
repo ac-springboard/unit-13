@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f24d468-7d39-4c55-a4a2-e449913116ff" name="Default Changelist" comment="" />
+    <list default="true" id="9f24d468-7d39-4c55-a4a2-e449913116ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../movie-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../movie-app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../jquery-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../jquery-demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../study/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -15,6 +22,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1i350VYDcn8QZtZaSDUButKCXEp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601123220101</updated>
       <workItem from="1601123221201" duration="14359000" />
+      <workItem from="1601183517844" duration="50000" />
     </task>
     <servers />
   </component>
