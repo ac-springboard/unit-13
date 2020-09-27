@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <style>
+
+        img {
+            max-width : 70%;
+        }
+
+        .image-center {
+            display : block;
+            margin  : 10px auto;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1 id="title" class="text-center">Welcome to my website.</h1>
+    <div class="row">
+        <article class="col-sm-8">
+            <p>My website is very important because I have many important things
+                to say. Here is a picture of a puppy in a cup: </p>
+            <img src="pup-in-cup.jpg" alt="Puppy in Cup">
+            <p>Here are some more thoughts: Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Cum harum labore veritatis, possimus
+                facilis quas repellat, explicabo, ad commodi ipsum quidem nostrum
+                earum pariatur fugit! Magni sunt nulla impedit! Facilis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, natus
+                qui nostrum libero atque hic distinctio sint facilis nihil possimus
+                tenetur deserunt rerum laboriosam cum quisuam doloremque ducimus
+                error.</p>
+            <p>Rerum debitis aspernatur, ipsum animi! Quis ullam dolore blanditiis
+                accusantium eius minus tempore, iure maxime similique vel! Possimus
+                reprehenderit autem, recusandae quos laudantium nesciunt libero suscipit
+                officia rerum, et.</p>
+            <p>Aliquam harum at soluta id esse perspiciatis, nesciunt corporis nostrum
+                commodi, dolorum, repellat possimus a cumque. Id sed explicabo, quaerat
+                sit esse facere, voluptatem, odit nesciunt eveniet assumenda, error!</p>
+            <p>Consequuntur porro, nobis placeat, labore magni aliquam repellendus
+                consequatur hic facere, molestiae dolorum suscipit quos sint, minima
+                Quibusdam voluptatem est hic, corporis. Officiis delectus, consectetur
+                harum reiciendis perferendis.</p>
+        </article>
+        <aside class="col-sm-4">
+            <h4>I love lists. Here's why.</h4>
+            <ol>
+                <li>Sometimes they're numbered, and numbers are great.</li>
+                <li>Sometimes they're not, and that's okay too.</li>
+                <li>I don't have the attention span to read paragraphs.</li>
+                <li>Hey look, there's a puppy!</li>
+            </ol>
+        </aside>
+    </div>
+    <div class="row mb-5">
+        <div class="col-sm-4">
+            Red
+            <input class="form-control" type="number" min="0" max="255" value="255">
+        </div>
+        <div class="col-sm-4">
+            Green
+            <input class="form-control" type="number" min="0" max="255" value="255">
+        </div>
+        <div class="col-sm-4">
+            Blue
+            <input class="form-control" type="number" min="0" max="255" value="255">
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+  // Add your code here!
+  /* 1 */
+  $(function () {
+    console.log("Let's get ready to party with jQuery!");
+  });
+  /* 2 */
+  const articleImgs  = $('article img').get();
+  const $articleImgs = $(articleImgs);
+  $articleImgs.addClass('image-center');
+  /* 3 */
+  const lastParagraph  = $('article p:last').get();
+  const $lastParagraph = $(lastParagraph);
+  $lastParagraph.fadeOut({duration: 3000}, function () {
+    $(this).remove();
+  });
+
+  /* 4 */
+  function randomInclusive(lower, higher) {
+    return Math.floor(lower + 0.5 + Math.random() * (higher - lower + 1));
+  }
+
+  // 'px' is the default unit. See https://api.jquery.com/height/#height-function
+  $('h1').css({fontSize: randomInclusive(0, 100)});
+  /* 5 */
+  const $li = $('<li>');
+  $li.text('This item can say whatever I want!');
+  $('ol').append($li);
+  /* 6 */
+  $('aside').empty();
+  $('aside').html('<p>My instructor thinks that lists are evil. He apologizes for submitting us into this situation.');
+
+  /* 7 */
+  function hex2(value) {
+    const hex2cor = Number(value).toString(16).padEnd(2, '0');
+    return hex2cor;
+  }
+
+  const inputs = $('input');
+  $(inputs).on('keyup change blur', function () {
+    const cor = '#' + hex2(inputs[0].value) + hex2(inputs[1].value) + hex2(inputs[2].value);
+    $('body').css('cssText', "background-color: " + cor);
+  });
+  /* 8 */
+  $('article img').on('click', function () {
+    // $(this).hide();
+    const duration = 1000;
+    const pointLength = 4c;
+    const pointRadius = pointLength / 2;
+    $(this).css("cssText", "border-radius: " + pointRadius + "px");
+    const w = $(this).width();
+    $(this).animate({
+      height: pointLength + "px",
+      width : w
+    }, duration, function () {
+      const h = $(this).height();
+      $(this).animate({
+        height: h,
+        width : pointLength + "px"
+      }, duration, function(){
+        $(this).fadeOut( duration, function(){
+          $(this).remove();
+        });
+      });
+    });
+  });
+</script>
+</body>
+
+</html>
