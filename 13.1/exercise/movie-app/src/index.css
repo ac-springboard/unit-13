@@ -8,7 +8,7 @@
 	transform : translateX(-50%);
 	}
 
-#main #top {
+.top {
 	/**/
 	display          : flex;
 	flex-direction   : row;
@@ -25,25 +25,47 @@
 	font-size        : 2vw;
 	}
 
-#main #top #title {
-	display     : inline-flex;
-	position    : relative;
-	min-width   : 50%;
-	margin-left : 1.0vw;
-	/*border      : 1px black solid;*/
-	font-size   : inherit;
-	font-family : inherit;
+.list {
+	display          : flex;
+	margin-top       : 0.25vw;
+	margin-bottom    : 0.25vw;
+	border           : 1px solid #add8e6;
+	background-color : transparent !important;
 	}
 
-#main #top #title .label {
-	border-radius    : 0.5vw 0 0 0.5vw;
-	background-color : lightgray;
-	padding          : 0.5vw;
-	color: #91853B;
-	font-width : bold;
-;	}
+.list_title {
+	width       : 100% !important;
+	margin-left : 1.0vw;
+	}
 
-#main #top #title input {
+.list_rating {
+	width : 30% !important;
+	}
+
+.list_actions {
+	/*width*/
+	}
+
+#title {
+	display      : inline-flex;
+	position     : relative;
+	width        : 100%;
+	margin-left  : 1.0vw;
+	margin-right : 0;
+	/*border      : 1px black solid;*/
+	font-size    : inherit;
+	font-family  : inherit;
+	}
+
+.label {
+	border-radius    : 0.5vw 0 0 0.5vw;
+	background-color : #d3d3d3;
+	padding          : 0.5vw;
+	color            : #91853b;
+	/*font-weight      : bold;*/
+	}
+
+input {
 	display          : inline-flex;
 	width            : 80%;
 	height           : 3.5vw;
@@ -52,59 +74,96 @@
 	outline          : none;
 	border           : transparent;
 	border-radius    : 0.5vw;
-	color            : #cccccc;
+	color            : #ffffff;
 	background-color : #aaaaaa;
 	/*background-color : #e0f8e0;*/
 	}
 
-#main #top #title input:hover {
+input:hover {
 	color            : #ffffff;
-	background-color : #B8B069;
-	box-shadow       : 0.3vw 0.3vw 0.4vw #91853B;
+	background-color : #b8b069;
+	box-shadow       : 0.3vw 0.3vw 0.4vw #91853b;
 	}
 
-#main #top #rating {
+.rating {
 	/*display      : flex;*/
 	position     : relative;
-	width        : 100%;
+	width        : 30%;
 	padding      : 0;
-	border       : 1px black solid;
+	/*border       : 1px black solid;*/
 	margin-left  : 2%;
 	margin-right : 2%;
 	font-size    : inherit;
 	font-family  : inherit;
 	}
 
-#main #top #rating .star {
+.star {
 	display : inline-block;
 	width   : 2.8vw;
 	height  : 2.8vw;
-	opacity : 0.4;
+	opacity : 0.3;
 	}
 
-#main #top #actions {
+.actions {
 	display      : inline-flex;
 	position     : relative;
 	margin-right : 1vw;
 	min-width    : 5.0vw;
-	/*border       : 1px green solid;*/
+	/*border       : 3px green solid;*/
 	text-align   : right;
 	font-size    : inherit;
 	font-family  : inherit;
+	line-height  : 100%;
 	}
 
-#main #top #actions #add_bt {
-	padding          : 0.5vw;
-	border-radius    : 0.5vw;
+/*
+ ADD BUTTON
+ */
+
+.add_bt {
+	border-radius : 0.5vw;
+	padding       : 0.5vw;
+	font-size     : 3.0vw;
+	}
+
+.add_bt_disabled {
 	color            : #cccccc;
 	background-color : #aaaaaa;
+	cursor           : default;
+	}
+
+.add_bt_enabled {
+	/*padding          : 1.0vw;*/
+	/*border-radius    : 2.0vw;*/
+	color            : #cccccc;
+	background-color : #b8b069;
 	cursor           : pointer;
 	}
 
-#main #top #actions #add_bt:hover {
+.add_bt_enabled:hover {
 	color            : #ffffff;
-	background-color : #B8B069;
+	background-color : #b8b069;
 	box-shadow       : 0.3vw 0.3vw 0.4vw #91853b;
+	}
+
+/*
+	REMOVE BUTTON
+ */
+.remove_bt {
+	border-radius    : 0.5vw;
+	/* padding: 0.8vw; */
+	height           : 70%;
+	width            : 70%;
+	font-size        : 4.0vw;
+	color            : #db5454;
+	cursor           : pointer;
+	line-height      : 100%;
+	text-align: center !important;
+	margin           : 0.5vw;
+	}
+
+.remove_bt:hover {
+	box-shadow : 0.3vw 0.3vw 0.4vw #913b3b;
 	}
 
 /* General Use */
@@ -158,5 +217,13 @@
 	top       : 50%;
 	left      : 75%;
 	transform : translate(-75%, -50%);
+	}
+
+/* Something is not right here */
+.h81-vcenter {
+	position  : absolute;
+	top       : 50%;
+	left      : 75%;
+	transform : translate(-80.5%, -50%);
 	}
 
