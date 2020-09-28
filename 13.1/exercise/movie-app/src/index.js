@@ -67,11 +67,20 @@ $(document).ready(function () {
 		$listActions.append($removeBt).addClass('actions');
 		/**/
 		const $entry = $('<div>');
-		$entry.append($listTitle).append($listRating).append($listActions).addClass('top list');
+		$entry.append($listTitle).append($listRating).append($listActions).addClass('list_item');
 		$list.append($entry);
 
 		resetAddForm();
 	});
+
+	$list.on( 'click', '.remove_bt', function(){
+		const $item = $(this).closest('.list_item');
+		$item.css('background-color', '#cccccc');
+		$item.fadeOut( function(){
+			$(this).remove();
+		});
+	});
+
 
 	/*
 	 FUNCTIONS
@@ -81,7 +90,7 @@ $(document).ready(function () {
 		$titleName.val('');
 		emptyTitle = true;
 		$stars.removeClass('bright');
-		emptyRating = true;t
+		emptyRating = true;
 		checkBtActivation();
 	}
 
